@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Sedona</title>
+  </head>
+  <body class="page__body">
+    <div class="container">
+      <h1 class="visually-hidden">Sedona</h1>
+      <header class="header">
+        <div class="header__wrapper">
+          <a href="index.html" class="header__logo">
+            <picture>
+              <source
+                media="(min-width: 1150px)"
+                srcset="img/icon/logotype-desktop.svg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/icon/logotype-tablet.svg"
+              />
+              <img
+                src="img/icon/logotype-mobile.svg"
+                alt="Логотип сайта"
+                width="102"
+                height="84"
+              />
+            </picture>
+          </a>
+          <nav class="page-nav">
+            <section class="user-nav">
+              <h2 class="visually-hidden">Навигация</h2>
+              <button class="user-nav__burger" type="button">
+                <span class="user-nav__line"></span>
+              </button>
+              <ul class="user-nav__list">
+                <li class="user-nav__item user-nav__item--home">
+                  <a href="index.html" class="user-nav__link">Главная</a>
+                </li>
+                <li class="user-nav__item user-nav__item--photo">
+                  <a href="#" class="user-nav__link">Фото и видео</a>
+                </li>
+                <li class="user-nav__item user-nav__item--review">
+                  <a href="#" class="user-nav__link">Форма Отзыва</a>
+                </li>
+                <li class="user-nav__item user-nav__item--academy">
+                  <a href="#" class="user-nav__link">HTML ACADEMY</a>
+                </li>
+              </ul>
+            </section>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <section class="promo promo__form">
+          <h2 class="visually-hidden">Добро пожаловать</h2>
+          <div class="promo__img">
+            <picture>
+              <source
+                media="(min-width: 1150px)"
+                srcset="img/icon/tablet-index.svg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/icon/tablet-index.svg"
+              />
+              <img
+                src="img/icon/text-index.svg"
+                alt="Промо"
+                width="282"
+                height="214"
+              />
+            </picture>
+          </div>
+        </section>
+        <section class="intro intro__form">
+          <h2 class="intro__title">Оставьте свой отзыв</h2>
+          <p class="intro__text">
+            Помогите нашим отелям стать лучше! <br />оставьте отзыв о них, а
+            также о посещенных вами достопримечательностях
+          </p>
+        </section>
+        <section class="feedback">
+          <h2 class="visually-hidden">Форма отзыва</h2>
+          <form action="#" method="post" class="feedback__form">
+            <fieldset class="feedback__name">
+              <legend class="feedback__title">
+                Представьтесь, пожалуйста:
+              </legend>
+              <label
+                >Имя:
+                <input type="text" name="name" placeholder="Петр" />
+              </label>
+              <label
+                >Фамилия
+                <input type="text" name="surname" placeholder="Иванов" />
+              </label>
+              <label
+                >Отчество:
+                <input
+                  type="text"
+                  name="fathername"
+                  placeholder="Александрович"
+                />
+              </label>
+            </fieldset>
+            <fieldset class="feedback__feeling">
+              <legend class="feedback__title">Ваше общее впечатление:</legend>
+              <label for="good">
+                <input
+                  type="radio"
+                  name="feelings"
+                  value="good"
+                  id="good"
+                  checked
+                />
+                <span class="control"></span>Скорее положительное
+              </label>
+              <label for="bad">
+                <input type="radio" name="feelings" value="bad" id="bad" />
+                <span class="control"></span>Скорее отрицательное
+              </label>
+              <label for="dontknow">
+                <input
+                  type="radio"
+                  name="feelings"
+                  value="dontknow"
+                  id="dontknow"
+                />
+                <span class="control"></span>Затрудняюсь ответить
+              </label>
+            </fieldset>
+            <div class="feedback__contact">
+              <h2 class="feedback__title">Контактная информация:</h2>
+              <div class="feedback__wrapper">
+                <label for="phone">Телефон:</label>
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  placeholder="Введите телефон"
+                />
+                <label for="email">Электронная почта</label>
+                <input
+                  type="text"
+                  name="mail"
+                  id="email"
+                  placeholder="Введите e-mail"
+                />
+              </div>
+            </div>
+            <fieldset class="feedback__visited">
+              <legend class="feedback__title">
+                Посещенные достопримечательности:
+              </legend>
+              <div class="feedback__visited feedback__visited--wrapper">
+                <label for="bridge">
+                  <input
+                    type="checkbox"
+                    name="visited"
+                    value="bridge"
+                    id="bridge"
+                    checked
+                  />
+                  <span class="control"></span>Мост дьявола
+                </label>
+                <label for="park">
+                  <input
+                    type="checkbox"
+                    name="visited"
+                    value="park"
+                    id="park"
+                    checked
+                  />
+                  <span class="control"></span>Слайд-парк
+                </label>
+                <label for="mountain">
+                  <input
+                    type="checkbox"
+                    name="visited"
+                    value="mountain"
+                    id="mountain"
+                    checked
+                  />
+                  <span class="control"></span>Гора-колокол
+                </label>
+                <label for="rock">
+                  <input
+                    type="checkbox"
+                    name="visited"
+                    value="rock"
+                    id="rock"
+                  />
+                  <span class="control"></span>Красные скалы
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="feedback__emotions">
+              <legend class="feedback__title">Опишите свои эмоции:</legend>
+              <textarea name="emotions">
+Опишите подробно все свои восторги</textarea
+              >
+            </fieldset>
+            <button type="submit" class="feedback__btn">Отправить отзыв</button>
+            <span class="feedback__required">*— Обязательные поля</span>
+          </form>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__left">
+          <a href="#" class="footer__hashtag">#visitsedona</a>
+        </div>
+        <div class="footer__center">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__social"
+                ><img class="footer__img" src="#" alt="Twitter"
+              /></a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__social"
+                ><img class="footer__img" src="#" alt="facebook"
+              /></a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__social"
+                ><img class="footer__img" src="#" alt="Youtube"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__right">
+          <a href="#" class="footer__link">
+            <span class="footer__desc">Разработано</span>
+            <img
+              class="footer__logo"
+              src="img/icon/htmlacademy.svg"
+              alt="Логотип Htmlacademy"
+              width="27"
+              height="34"
+          /></a>
+        </div>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
