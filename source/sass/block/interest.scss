@@ -1,0 +1,70 @@
+.interest {
+  padding: 33px 0 49px 0;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    padding: 56px 0 58px 0;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 56px 0 66px 0;
+    margin: 0 -20px;
+    background-color: $color-white;
+  }
+}
+
+.interest__title {
+  display: block;
+  font-family: $basic-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $color-black;
+
+  margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+
+    margin-bottom: 34px;
+  }
+}
+
+.interest__text {
+  font-family: $basic-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $color-black;
+
+  margin-bottom: 29px;
+
+  & br {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 38px;
+
+    br {
+      display: block;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 45px;
+  }
+}
+
+.interest__button {
+  min-width: 280px;
+  min-height: 58px;
+
+  @media (min-width: 768px) {
+    min-width: 458px;
+  }
+}

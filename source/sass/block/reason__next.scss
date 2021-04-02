@@ -1,0 +1,63 @@
+.reason__next--left {
+  padding: 39px 0 35px 0;
+
+  background-color: $color-blue;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    order: 2;
+
+    width: 33%;
+    padding: 42px 30px 40px 30px;
+  }
+
+  @media (min-width: 1200px) {
+    br {
+      display: block;
+    }
+    padding: 51px 30px 40px 26px;
+  }
+}
+
+.reason__title--next {
+  & br {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    br {
+      display: block;
+    }
+  }
+}
+
+.reason__next--right {
+  width: 100%;
+  min-height: 260px;
+
+  background-image: url("../img/photo-bridge@1x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    min-height: 256px;
+
+    order: 1;
+
+    background-image: url("../img/photo-bridge@1x-tab.jpg");
+    background-repeat: no-repeat;
+
+    width: auto;
+    flex-grow: 1;
+  }
+
+  @media (min-width: 1200px) {
+    min-height: 256px;
+
+    background-image: url("../img/photo-bridge@1x-desk.jpg");
+    background-repeat: no-repeat;
+  }
+}

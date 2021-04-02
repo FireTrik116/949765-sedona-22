@@ -1,0 +1,56 @@
+.map {
+  position: relative;
+  background-image: url("../img/map-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  min-height: 350px;
+  margin: 0 -20px;
+
+  @media (min-width: 768px) {
+    background-image: url("../img/map-tablet.jpg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: 1200px) {
+    background-image: url("../img/map-desktop.jpg");
+  }
+}
+
+.map__position {
+  position: absolute;
+  content: "";
+
+  top: 161px;
+  left: 146px;
+
+  width: 27px;
+  height: 27px;
+
+  background-color: $color-white;
+  border-radius: 50%;
+
+  @media (min-width: 768px) {
+    top: 162px;
+    left: 372px;
+  }
+
+  @media (min-width: 1200px) {
+    top: 162px;
+    left: 586px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+
+    top: 5px;
+    left: 5px;
+
+    width: 17px;
+    height: 17px;
+
+    background-color: $color-blue;
+    border-radius: 50%;
+  }
+}

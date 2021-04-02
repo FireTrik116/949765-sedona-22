@@ -1,0 +1,46 @@
+.intro {
+  padding: 32px 32px 11px 30px;
+
+  text-align: center;
+  margin: 0 -20px;
+
+  background-color: $color-white;
+
+  @media (min-width: 768px) {
+    padding: 43px 80px 52px 80px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 55px 360px 42px 356px;
+  }
+}
+
+.intro__title {
+  font-family: $basic-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $color-black;
+
+  margin-bottom: 32px;
+
+  @media (min-width: 768px) {
+    font-size: 21px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 30px;
+  }
+}
+
+.intro__text {
+  font-family: $basic-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $color-black;
+}

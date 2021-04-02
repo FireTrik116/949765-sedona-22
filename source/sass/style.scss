@@ -1,1 +1,17 @@
-// Начните писать стили здесь
+@import "variables.scss";
+@import "fonts.scss";
+@import "base.scss";
+
+// БЛОКИ
+
+@import "block/header.scss";
+@import "block/user-nav.scss";
+@import "block/promo.scss";
+@import "block/intro.scss";
+@import "block/reason.scss";
+@import "block/features.scss";
+@import "block/reason__next.scss";
+@import "block/next.scss";
+@import "block/interest.scss";
+@import "block/map.scss";
+@import "block/footer.scss";
