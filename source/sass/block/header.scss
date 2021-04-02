@@ -1,0 +1,20 @@
+.header {
+  position: relative;
+  min-height: 56px;
+  margin: 0 -20px;
+  background: $color-white;
+}
+
+.header__logo {
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
+  width: 102px;
+  height: 84px;
+
+  @media (min-width: 1150px) {
+    width: 187px;
+    height: 96px;
+  }
+}

@@ -1,0 +1,130 @@
+.reason {
+  text-align: center;
+
+  min-height: 256px;
+
+  margin: 0 -20px;
+
+  @media (min-width: 767px) {
+    display: flex;
+  }
+}
+
+.reason__col--left {
+  padding-top: 71px;
+  padding-bottom: 39px;
+
+  background-image: url("../img/icon/icon-intro-bottom.svg");
+  background-size: 100% 37px;
+  background-repeat: no-repeat;
+  background-position: 0 -1px;
+
+  background-color: $color-blue;
+
+  @media (min-width: 768px) {
+    width: 256px;
+    padding: 40px 30px;
+
+    background-image: none;
+  }
+
+  @media (min-width: 1200px) {
+    width: 33.2%;
+    padding: 47px 65px;
+  }
+}
+
+.reason__title {
+  display: block;
+
+  font-family: $basic-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $color-white;
+
+  margin-bottom: 10px;
+
+  @media (min-width: 768px) {
+    font-size: 21px;
+
+    margin-bottom: 14px;
+
+    @media (min-width: 1200px) {
+      padding: 0 47px;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.reason__number {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+
+  margin-bottom: 18px;
+
+  font-family: $basic-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-white;
+
+  &::after,
+  &::before {
+    position: absolute;
+    content: "";
+    border: 1px solid $color-white;
+    width: 8px;
+  }
+
+  &::before {
+    top: 11px;
+    left: -12px;
+  }
+
+  &::after {
+    top: 11px;
+    right: -12px;
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 23px;
+  }
+}
+
+.reason__text {
+  font-family: $basic-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $color-white;
+}
+
+.reason__col--right {
+  width: 100%;
+  min-height: 260px;
+
+  background-image: url("../img/photo-city@1x-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    min-height: 256px;
+    background-image: url("../img/photo-city@1x-tab.jpg");
+    background-repeat: no-repeat;
+    width: auto;
+    flex-grow: 1;
+  }
+
+  @media (min-width: 1200px) {
+    min-height: 256px;
+    background-image: url("../img/photo-city@1x-desk.jpg");
+    background-repeat: no-repeat;
+  }
+}
