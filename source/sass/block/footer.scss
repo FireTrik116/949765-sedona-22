@@ -71,19 +71,21 @@
   cursor: pointer;
 }
 
-.footer__img--twitter {
-  width: 18px;
-  height: 15px;
-}
+.footer__img {
+  &--twitter {
+    width: 18px;
+    height: 15px;
+  }
 
-.footer__img--facebook {
-  width: 9px;
-  height: 19px;
-}
+  &----facebook {
+    width: 9px;
+    height: 19px;
+  }
 
-.footer__img--youtube {
-  width: 20px;
-  height: 14px;
+  &----youtube {
+    width: 20px;
+    height: 14px;
+  }
 }
 
 .footer__link {
