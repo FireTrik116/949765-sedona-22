@@ -1,6 +1,6 @@
-@import "base.scss";
-@import "fonts.scss";
-@import "variables.scss";
+@import "utilis/variables.scss";
+@import "utilis/base.scss";
+@import "utilis/fonts.scss";
 
 // БЛОКИ
 
@@ -15,3 +15,11 @@
 @import "block/interest.scss";
 @import "block/map.scss";
 @import "block/footer.scss";
+@import "block/footer__catalog.scss";
+@import "block/promo-catalog.scss";
+@import "block/intro-catalog.scss";
+@import "block/user-photo.scss";
+@import "block/photo.scss";
+@import "block/video.scss";
+@import "block/intro__form.scss";
+@import "block/feedback.scss";

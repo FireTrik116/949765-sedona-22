@@ -1,0 +1,41 @@
+.photo {
+  background-color: $color-white;
+
+  @media (min-width: 768px) {
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin: 0 40px;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0 -20px;
+  }
+}
+
+.photo__item {
+  position: relative;
+  min-height: 415px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid $color-grey;
+    margin: 0 -20px;
+    width: calc(100% + 40px);
+    top: 414px;
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+    min-height: auto;
+  }
+
+  @media (min-width: 768px) {
+    &::before {
+      display: none;
+    }
+  }
+}

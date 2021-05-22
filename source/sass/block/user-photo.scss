@@ -1,0 +1,130 @@
+.user-photo {
+  padding: 22px 0 0 0;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  &--big {
+    @media (min-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+.user-photo__img {
+  height: 280px;
+
+  @media (min-width: 768px) {
+    height: 267px;
+  }
+
+  &--big {
+    @media (min-width: 768px) {
+      height: 400px;
+    }
+  }
+}
+
+.user-photo__wrapper {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    min-height: 80px;
+
+    padding: 0 20px 2px 20px;
+
+    background-color: $color-bg-input;
+
+    &--color {
+      background-color: $color-user-photo;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: -80px;
+  }
+}
+
+.user-photo__inner {
+  margin-top: 10px;
+
+  @media (min-width: 768px) {
+    margin: 16px 0 0 0;
+  }
+}
+
+.user-photo__name {
+  font-family: $basic-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $color-black;
+
+  @media (min-width: 1200px) {
+    color: $color-white;
+  }
+}
+
+.user-photo__author {
+  font-family: $basic-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $color-black;
+
+  @media (min-width: 1200px) {
+    color: $color-white;
+  }
+}
+
+.user-photo__left {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+
+  @media (min-width: 768px) {
+    margin-top: 5px;
+  }
+}
+
+.user-photo__like {
+  margin-right: 15px;
+
+  background-color: $color-transparent;
+
+  & svg {
+    fill: $color-black;
+    opacity: 0.3;
+
+    @media (min-width: 1200px) {
+      fill: $color-white;
+      opacity: 1;
+    }
+  }
+
+  @media (min-width: 768px) {
+    margin-right: 10px;
+  }
+}
+
+.user-photo__number {
+  width: 31px;
+
+  font-family: $basic-font;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $color-black;
+
+  @media (min-width: 1200px) {
+    color: $color-white;
+  }
+}

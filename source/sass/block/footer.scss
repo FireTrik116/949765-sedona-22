@@ -69,6 +69,24 @@
   padding-top: 15px;
   background: $color-blue;
   cursor: pointer;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $color-button-hover;
+  }
+
+  &:active {
+    background-color: $color-button-active;
+
+    & img {
+      opacity: 0.3;
+    }
+  }
+
+  & img {
+    transition: opacity 0.3s ease;
+  }
 }
 
 .footer__img {
@@ -77,12 +95,12 @@
     height: 15px;
   }
 
-  &----facebook {
+  &--facebook {
     width: 9px;
     height: 19px;
   }
 
-  &----youtube {
+  &--youtube {
     width: 20px;
     height: 14px;
   }
@@ -92,6 +110,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  & svg {
+    transition: all 0.3s ease;
+  }
+
+  &:hover svg {
+    fill: $color-blue;
+  }
+
+  &:active svg {
+    fill: rgba($color-black, 0.3);
+  }
 }
 
 .footer__logo {

@@ -1,0 +1,31 @@
+.intro__form {
+  padding: 36px 20px 17px 20px;
+
+  @media (min-width: 768px) {
+    padding-top: 62px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 112px;
+  }
+}
+
+.intro__title--form {
+  margin-bottom: 28px;
+
+  @media (min-width: 768px) {
+    margin: 0 0 33px -2px;
+
+    font-size: 30px;
+    letter-spacing: -0.2px;
+  }
+}
+
+.intro__text--form {
+  line-height: 24px;
+
+  @media (min-width: 768px) {
+    max-width: 435px;
+    margin: 0 auto;
+  }
+}

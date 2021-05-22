@@ -39,6 +39,8 @@
 
   background-color: $color-blue;
 
+  transition: all 0.3s ease;
+
   &::before,
   &::after {
     position: absolute;
@@ -50,7 +52,7 @@
 
     background-color: $color-blue;
 
-    transition: transform 0.3s ease-out;
+    transition: all 0.3s ease-out;
   }
 
   &::before {
@@ -122,6 +124,14 @@
 
 .user-nav__item--review {
   margin-left: auto;
+
+  @media (min-width: 768px) {
+    width: 145px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 239px;
+  }
 }
 
 .user-nav__link {
@@ -134,6 +144,27 @@
   text-transform: uppercase;
 
   cursor: pointer;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $color-blue;
+  }
+
+  &:active {
+    color: rgba($color-brown, 0.3);
+  }
+
+  &--active {
+    color: $color-brown;
+
+    &:hover {
+      color: $color-brown-hover;
+    }
+
+    &:active {
+      color: rgba($color-brown, 0.3);
+    }
+  }
 
   @media (max-width: 767px) {
     color: $color-white;

@@ -16,6 +16,7 @@
 
 .page__body {
   box-sizing: border-box;
+  background-color: $color-white;
 
   font-family: $basic-font;
 
@@ -57,5 +58,9 @@ button {
   text-transform: uppercase;
   color: $color-white;
   background-color: $color-blue;
+  border: none;
+}
+
+fieldset {
   border: none;
 }

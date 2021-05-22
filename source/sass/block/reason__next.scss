@@ -10,8 +10,8 @@
   @media (min-width: 768px) {
     order: 2;
 
-    width: 33%;
-    padding: 42px 30px 40px 30px;
+    width: 33.4%;
+    padding: 44px 30px 40px 30px;
   }
 
   @media (min-width: 1200px) {
@@ -38,9 +38,13 @@
   width: 100%;
   min-height: 260px;
 
-  background-image: url("../img/photo-bridge@1x.jpg");
+  background-image: url("../img/photo-bridge@1x-mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/photo-bridge@2x-mobile.jpg");
+  }
 
   @media (min-width: 768px) {
     min-height: 256px;
@@ -52,6 +56,10 @@
 
     width: auto;
     flex-grow: 1;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/photo-bridge@2x-tab.jpg");
+    }
   }
 
   @media (min-width: 1200px) {
@@ -59,5 +67,9 @@
 
     background-image: url("../img/photo-bridge@1x-desk.jpg");
     background-repeat: no-repeat;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/photo-bridge@2x-desk.jpg");
+    }
   }
 }

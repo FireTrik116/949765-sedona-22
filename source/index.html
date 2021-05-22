@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Sedona</title>
@@ -15,20 +16,9 @@
         <div class="header__wrapper">
           <a href="#" class="header__logo">
             <picture>
-              <source
-                media="(min-width: 1150px)"
-                srcset="img/icon/logotype-desktop.svg"
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="img/icon/logotype-tablet.svg"
-              />
-              <img
-                src="img/icon/logotype-mobile.svg"
-                alt="Логотип сайта"
-                width="102"
-                height="84"
-              />
+              <source media="(min-width: 1200px)" srcset="img/icon/logotype-desktop.svg"/>
+              <source media="(min-width: 768px)" srcset="img/icon/logotype-tablet.svg"/>
+              <img src="img/icon/logotype-mobile.svg" alt="Логотип сайта" width="102" height="84"/>
             </picture>
           </a>
           <nav class="page-nav">
@@ -39,7 +29,7 @@
               </button>
               <ul class="user-nav__list">
                 <li class="user-nav__item user-nav__item--home">
-                  <a href="#" class="user-nav__link">Главная</a>
+                  <a href="#" class="user-nav__link user-nav__link--active">Главная</a>
                 </li>
                 <li class="user-nav__item user-nav__item--photo">
                   <a href="catalog.html" class="user-nav__link">Фото и видео</a>
@@ -60,20 +50,8 @@
           <h2 class="visually-hidden">Добро пожаловать</h2>
           <div class="promo__img">
             <picture>
-              <source
-                media="(min-width: 1150px)"
-                srcset="img/icon/tablet-index.svg"
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="img/icon/tablet-index.svg"
-              />
-              <img
-                src="img/icon/text-index.svg"
-                alt="Промо"
-                width="282"
-                height="214"
-              />
+              <source media="(min-width: 768px)" srcset="img/icon/tablet-index.svg"/>
+              <img src="img/icon/mobile-index.svg" alt="Промо" width="282" height="214"/>
             </picture>
           </div>
         </section>
@@ -211,13 +189,10 @@
         <div class="footer__right">
           <a href="#" class="footer__link">
             <span class="footer__text">Разработано</span>
-            <img
-              class="footer__logo"
-              src="img/icon/htmlacademy.svg"
-              alt="Логотип Htmlacademy"
-              width="27"
-              height="34"
-          /></a>
+            <svg width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#icon-academy"></use>
+            </svg>
+          </a>
         </div>
       </footer>
     </div>
