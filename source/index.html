@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
 
     <title>Sedona</title>
   </head>
@@ -16,9 +16,20 @@
         <div class="header__wrapper">
           <a href="#" class="header__logo">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/icon/logotype-desktop.svg"/>
-              <source media="(min-width: 768px)" srcset="img/icon/logotype-tablet.svg"/>
-              <img src="img/icon/logotype-mobile.svg" alt="Логотип сайта" width="102" height="84"/>
+              <source
+                media="(min-width: 1200px)"
+                srcset="img/icon/logotype-desktop.svg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/icon/logotype-tablet.svg"
+              />
+              <img
+                src="img/icon/logotype-mobile.svg"
+                alt="Логотип сайта"
+                width="102"
+                height="84"
+              />
             </picture>
           </a>
           <nav class="page-nav">
@@ -29,7 +40,9 @@
               </button>
               <ul class="user-nav__list">
                 <li class="user-nav__item user-nav__item--home">
-                  <a href="#" class="user-nav__link user-nav__link--active">Главная</a>
+                  <a href="#" class="user-nav__link user-nav__link--active"
+                    >Главная</a
+                  >
                 </li>
                 <li class="user-nav__item user-nav__item--photo">
                   <a href="catalog.html" class="user-nav__link">Фото и видео</a>
@@ -50,8 +63,16 @@
           <h2 class="visually-hidden">Добро пожаловать</h2>
           <div class="promo__img">
             <picture>
-              <source media="(min-width: 768px)" srcset="img/icon/tablet-index.svg"/>
-              <img src="img/icon/mobile-index.svg" alt="Промо" width="282" height="214"/>
+              <source
+                media="(min-width: 768px)"
+                srcset="img/icon/tablet-index.svg"
+              />
+              <img
+                src="img/icon/mobile-index.svg"
+                alt="Промо"
+                width="282"
+                height="214"
+              />
             </picture>
           </div>
         </section>
@@ -145,7 +166,12 @@
         </section>
         <section class="map">
           <h2 class="visually-hidden">Карта</h2>
-          <div class="map__position"></div>
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad205a155f603632116bd766cd1af7c0321ac085d08523b72ef531b4dc40e08dd&amp;source=constructor"
+            width="100%"
+            height="350"
+            frameborder="0"
+          ></iframe>
         </section>
       </main>
       <footer class="footer">
@@ -187,9 +213,17 @@
           </ul>
         </div>
         <div class="footer__right">
-          <a href="#" class="footer__link">
+          <a
+            href="https://htmlacademy.ru/intensive/adaptive"
+            class="footer__link"
+          >
             <span class="footer__text">Разработано</span>
-            <svg width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              width="27"
+              height="35"
+              viewBox="0 0 27 35"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <use xlink:href="img/sprite.svg#icon-academy"></use>
             </svg>
           </a>

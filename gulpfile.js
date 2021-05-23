@@ -20,20 +20,6 @@ const clean = () => {
 
 exports.clean = clean;
 
-// Styles
-
-const devStyles = () => {
-  return gulp
-    .src("source/sass/style.scss")
-    .pipe(plumber())
-    .pipe(sass())
-    .pipe(postcss([autoprefixer()]))
-    .pipe(gulp.dest("source/css"))
-    .pipe(sync.stream());
-};
-
-exports.devStyles = devStyles;
-
 const styles = () => {
   return gulp
     .src("source/sass/style.scss")
@@ -42,8 +28,8 @@ const styles = () => {
     .pipe(sass())
     .pipe(csso())
     .pipe(postcss([autoprefixer()]))
-    .pipe(gulp.dest("source/css"))
     .pipe(rename("style.min.css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
@@ -96,7 +82,7 @@ exports.webp = createWebp;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: "source",
+      baseDir: "build",
     },
     cors: true,
     notify: false,
@@ -113,11 +99,11 @@ const copy = () => {
   return gulp
     .src(
       [
-        "source/fonts/**/*.{woff,woff2}",
-        "source/img/**",
+        "source/fonts//*.{woff,woff2}",
+        "source/img/",
         "source/js/**",
-        "source/*.ico",
-        "source/*.html",
+        "source/.ico",
+        "source/.html",
       ],
       {
         base: "source",
@@ -131,7 +117,7 @@ exports.copy = copy;
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("devStyles"));
+  gulp.watch("source/sass/**/.scss", gulp.series("styles"));
   gulp.watch("source/*.html").on("change", sync.reload);
 };
 
@@ -141,4 +127,4 @@ const build = gulp.series(clean, styles, copy, optimizeImages);
 
 exports.build = build;
 
-exports.default = gulp.series(devStyles, server, watcher);
+exports.default = gulp.series(styles, server, watcher);

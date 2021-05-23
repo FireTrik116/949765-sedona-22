@@ -128,49 +128,49 @@
 .video__time {
   grid-area: video__time;
   height: 45px;
+}
 
-  &--button {
-    position: relative;
-    border: 2px solid rgba(255, 255, 255, 0.2);
+.video__line {
+  position: relative;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background-color: $color-transparent;
+
+  width: 84%;
+  margin-top: 22px;
+
+  @media (min-width: 768px) {
+    width: 60%;
+    margin-top: 45px;
+    margin-right: 72px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 68%;
+    margin-right: 72px;
+
+    border: 3px solid rgba(255, 255, 255, 0.2);
     background-color: $color-transparent;
+  }
 
-    width: 84%;
-    margin-top: 22px;
+  &::after {
+    position: absolute;
+    content: "";
+
+    border: 1px solid $color-white;
+    background-color: $color-white;
+    border-radius: 50%;
+
+    width: 9px;
+    height: 9px;
+    top: -5px;
+    left: 34px;
 
     @media (min-width: 768px) {
-      width: 60%;
-      margin-top: 45px;
-      margin-right: 72px;
+      left: 110px;
     }
 
     @media (min-width: 1200px) {
-      width: 68%;
-      margin-right: 72px;
-
-      border: 3px solid rgba(255, 255, 255, 0.2);
-      background-color: $color-transparent;
-    }
-
-    &::after {
-      position: absolute;
-      content: "";
-
-      border: 1px solid $color-white;
-      background-color: $color-white;
-      border-radius: 50%;
-
-      width: 9px;
-      height: 9px;
-      top: -5px;
-      left: 34px;
-
-      @media (min-width: 768px) {
-        left: 110px;
-      }
-
-      @media (min-width: 1200px) {
-        left: 111px;
-      }
+      left: 111px;
     }
   }
 }
@@ -178,7 +178,7 @@
 .video__repeat {
   grid-area: video__repeat;
 
-  &--button {
+  &-button {
     cursor: pointer;
 
     width: 16px;
@@ -227,7 +227,7 @@
 .video__subtitles {
   grid-area: video__subtitles;
 
-  &--button {
+  &-button {
     background-color: $color-transparent;
     cursor: pointer;
 
@@ -276,7 +276,7 @@
 .video__fullscreen {
   grid-area: video__fullscreen;
 
-  &--button {
+  &-button {
     background-color: $color-transparent;
     cursor: pointer;
 
