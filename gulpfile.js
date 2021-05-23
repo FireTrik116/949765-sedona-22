@@ -100,10 +100,10 @@ const copy = () => {
     .src(
       [
         "source/fonts//*.{woff,woff2}",
-        "source/img/",
-        "source/js/**",
-        "source/.ico",
-        "source/.html",
+        "source/img/*",
+        "source/js/*",
+        "source/*.ico",
+        "source/*.html",
       ],
       {
         base: "source",
