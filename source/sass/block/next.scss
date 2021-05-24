@@ -67,24 +67,18 @@
 
   margin-bottom: 10px;
 
-  br {
-    display: none;
-  }
-
   @media (min-width: 768px) {
     font-size: 21px;
 
     margin-bottom: 14px;
-
-    br {
-      display: block;
-    }
   }
+}
 
-  @media (min-width: 1200px) {
-    br {
-      display: block;
-    }
+.next__title br {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
   }
 }
 

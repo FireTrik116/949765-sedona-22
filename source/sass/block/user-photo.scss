@@ -99,18 +99,18 @@
 
   background-color: $color-transparent;
 
-  & svg {
-    fill: $color-black;
-    opacity: 0.3;
-
-    @media (min-width: 1200px) {
-      fill: $color-white;
-      opacity: 1;
-    }
-  }
-
   @media (min-width: 768px) {
     margin-right: 10px;
+  }
+}
+
+.user-photo__like svg {
+  fill: $color-black;
+  opacity: 0.3;
+
+  @media (min-width: 1200px) {
+    fill: $color-white;
+    opacity: 1;
   }
 }
 

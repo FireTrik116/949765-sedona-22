@@ -19,6 +19,7 @@
   background-color: $color-white;
 
   font-family: $basic-font;
+  font-display: swap;
 
   @media (min-width: 1200px) {
     background: $color-bg-body;

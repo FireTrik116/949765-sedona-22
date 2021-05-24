@@ -61,7 +61,7 @@ const sprite = () => {
     .src("source/img/**/icon-*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 };
 
 exports.sprite = sprite;
@@ -99,7 +99,7 @@ const copy = () => {
   return gulp
     .src(
       [
-        "source/fonts//*.{woff,woff2}",
+        "source/fonts/*.{woff,woff2}",
         "source/img/*",
         "source/js/*",
         "source/*.ico",
@@ -117,13 +117,13 @@ exports.copy = copy;
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/.scss", gulp.series("styles"));
+  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/*.html").on("change", sync.reload);
 };
 
 // Build
 
-const build = gulp.series(clean, styles, copy, optimizeImages);
+const build = gulp.series(clean, styles, copy, sprite, optimizeImages);
 
 exports.build = build;
 

@@ -40,33 +40,6 @@
 .feedback__name {
   padding: 20px 0 24px 0;
 
-  & .feedback__title {
-    @media (min-width: 768px) {
-      margin: 0 0 55px 58px;
-
-      text-align: unset;
-    }
-
-    @media (min-width: 1200px) {
-      margin-left: 77px;
-    }
-  }
-
-  & .feedback__info {
-    @media (min-width: 768px) {
-      margin: 0 0 20px 0;
-      padding-left: 58px;
-    }
-
-    @media (min-width: 1200px) {
-      padding-left: 77px;
-    }
-  }
-
-  & .feedback__input {
-    margin-left: 15px;
-  }
-
   @media (min-width: 768px) {
     position: relative;
     grid-area: name;
@@ -97,75 +70,38 @@
   }
 }
 
+.feedback__name .feedback__title {
+  @media (min-width: 768px) {
+    margin: 0 0 55px 58px;
+
+    text-align: unset;
+  }
+
+  @media (min-width: 1200px) {
+    margin-left: 77px;
+  }
+}
+
+.feedback__name .feedback__info {
+  @media (min-width: 768px) {
+    margin: 0 0 20px 0;
+    padding-left: 58px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: 77px;
+  }
+}
+
+.feedback__name .feedback__input {
+  margin-left: 15px;
+}
+
 .feedback__contact {
   margin: 0 -20px 0 -20px;
   padding: 20px 0 27px 0;
 
   border-top: 1px solid $color-bg-input;
-
-  & .feedback__wrapper {
-    padding-top: 15px;
-
-    @media (min-width: 768px) {
-      padding: 20px 0 0 0;
-    }
-
-    @media (min-width: 1200px) {
-      display: flex;
-      justify-content: space-between;
-      padding-top: 72px;
-    }
-  }
-
-  & .feedback__group {
-    @media (min-width: 1200px) {
-      display: flex;
-      width: 400px;
-    }
-  }
-
-  & .feedback__group:last-child {
-    margin-top: 13px;
-
-    @media (min-width: 768px) {
-      margin-top: 23px;
-    }
-
-    @media (min-width: 1200px) {
-      width: 50%;
-      margin-top: 0;
-    }
-  }
-
-  & .feedback__title {
-    @media (min-width: 768px) {
-      position: relative;
-      display: block;
-      margin: 0 auto;
-      width: 400px;
-
-      background-color: $color-white;
-    }
-  }
-
-  & .feedback__info {
-    margin: 0 0 0 22px;
-
-    @media (min-width: 1200px) {
-      margin: 0 16px 0 0;
-      flex-shrink: 0;
-    }
-  }
-
-  & .feedback__input {
-    margin-top: 9px;
-    padding: 0 70px 0 22px;
-
-    @media (min-width: 1200px) {
-      flex-grow: 1;
-      margin-top: 0;
-    }
-  }
 
   @media (min-width: 768px) {
     position: relative;
@@ -197,91 +133,75 @@
   }
 }
 
+.feedback__contact .feedback__wrapper {
+  padding-top: 15px;
+
+  @media (min-width: 768px) {
+    padding: 20px 0 0 0;
+  }
+
+  @media (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 72px;
+  }
+}
+
+.feedback__contact .feedback__group {
+  @media (min-width: 1200px) {
+    display: flex;
+    width: 400px;
+  }
+}
+
+.feedback__contact .feedback__group:last-child {
+  margin-top: 13px;
+
+  @media (min-width: 768px) {
+    margin-top: 23px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 50%;
+    margin-top: 0;
+  }
+}
+
+.feedback__contact .feedback__title {
+  @media (min-width: 768px) {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+
+    background-color: $color-white;
+  }
+}
+
+.feedback__contact .feedback__info {
+  margin: 0 0 0 22px;
+
+  @media (min-width: 1200px) {
+    margin: 0 16px 0 0;
+    flex-shrink: 0;
+  }
+}
+
+.feedback__contact .feedback__input {
+  margin-top: 9px;
+  padding: 0 70px 0 22px;
+
+  @media (min-width: 1200px) {
+    flex-grow: 1;
+    margin-top: 0;
+  }
+}
+
 .feedback__feeling {
   margin: 0 -20px 0 -20px;
   padding: 20px 0 14px 0;
 
   border-top: 1px solid $color-bg-input;
-
-  & .feedback__group {
-    padding-top: 21px;
-
-    @media (min-width: 768px) {
-      padding-top: 57px;
-    }
-  }
-
-  & .feedback__title {
-    @media (min-width: 768px) {
-      text-align: unset;
-    }
-
-    @media (min-width: 1200px) {
-      margin-left: 75px;
-    }
-  }
-
-  & .feedback__label {
-    margin-bottom: 14px;
-
-    @media (min-width: 768px) {
-      margin-bottom: 23px;
-    }
-  }
-
-  & .feedback__input {
-    display: none;
-
-    &:checked ~ .control::before {
-      background-color: $color-text;
-    }
-  }
-
-  & .control {
-    position: relative;
-    display: block;
-    width: 55px;
-    height: 55px;
-    margin-right: 23px;
-
-    background-color: $color-bg-input;
-    border-radius: 50%;
-    cursor: pointer;
-
-    transition: all 0.3s ease;
-
-    &:hover {
-      background-color: $color-input-bg-hover;
-    }
-
-    &:active {
-      background-color: $color-radio-button-active;
-
-      &::before {
-        background-color: rgba($color-text, 0.3);
-      }
-    }
-
-    &::before {
-      position: absolute;
-      content: "";
-      top: 50%;
-      left: 50%;
-
-      width: 22px;
-      height: 22px;
-
-      transform: translate(-50%, -50%);
-      border-radius: 50%;
-      background-color: $color-transparent;
-
-      transition: all 0.3s ease;
-    }
-
-    @media (min-width: 768px) {
-      margin-right: 19px;
-    }
-  }
 
   @media (min-width: 768px) {
     grid-area: feeling;
@@ -296,111 +216,91 @@
   }
 }
 
+.feedback__feeling .feedback__group {
+  padding-top: 21px;
+
+  @media (min-width: 768px) {
+    padding-top: 57px;
+  }
+}
+
+.feedback__feeling .feedback__title {
+  @media (min-width: 768px) {
+    text-align: unset;
+  }
+
+  @media (min-width: 1200px) {
+    margin-left: 75px;
+  }
+}
+
+.feedback__feeling .feedback__label {
+  margin-bottom: 14px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 23px;
+  }
+}
+
+.feedback__feeling .feedback__input {
+  display: none;
+
+  &:checked ~ .control::before {
+    background-color: $color-text;
+  }
+}
+
+.feedback__feeling .control {
+  position: relative;
+  display: block;
+  width: 55px;
+  height: 55px;
+  margin-right: 23px;
+
+  background-color: $color-bg-input;
+  border-radius: 50%;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $color-input-bg-hover;
+  }
+
+  &:active {
+    background-color: $color-radio-button-active;
+
+    &::before {
+      background-color: rgba($color-text, 0.3);
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+
+    width: 22px;
+    height: 22px;
+
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: $color-transparent;
+
+    transition: all 0.3s ease;
+  }
+
+  @media (min-width: 768px) {
+    margin-right: 19px;
+  }
+}
+
 .feedback__landmarks {
   margin: 0 -20px 0 -20px;
   padding: 15px 0 0 0;
 
   border-top: 1px solid $color-bg-input;
-
-  & .feedback__group {
-    padding-top: 20px;
-
-    @media (min-width: 768px) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      max-width: 456px;
-      margin: 0 auto;
-      padding: 43px 0 0 0;
-    }
-
-    @media (min-width: 1200px) {
-      max-width: 100%;
-      margin: 0;
-    }
-  }
-
-  & .feedback__title {
-    @media (min-width: 768px) {
-      position: relative;
-      display: block;
-      margin: 0 auto;
-      width: 400px;
-
-      background-color: $color-white;
-    }
-  }
-
-  & .feedback__label {
-    margin-bottom: 25px;
-
-    @media (min-width: 768px) {
-      width: 196px;
-      margin-bottom: 34px;
-
-      white-space: nowrap;
-    }
-
-    @media (min-width: 1200px) {
-      width: auto;
-    }
-  }
-
-  & .feedback__input {
-    display: none;
-
-    &:checked ~ .control::before {
-      display: block;
-    }
-  }
-
-  & .control {
-    position: relative;
-    width: 55px;
-    height: 55px;
-    margin-right: 23px;
-    flex-shrink: 0;
-
-    border-radius: 5px;
-    background-color: $color-bg-input;
-    cursor: pointer;
-
-    transition: all 0.3s ease;
-
-    &:hover {
-      background-color: $color-input-bg-hover;
-    }
-
-    &:active {
-      background-color: $color-radio-button-active;
-
-      &::before {
-        opacity: 0.3;
-      }
-    }
-
-    &::before {
-      position: absolute;
-      content: "";
-      top: 50%;
-      left: 50%;
-
-      display: none;
-      width: 23px;
-      height: 16px;
-
-      background-image: url("../img/icon/icon-tick.svg");
-      background-repeat: no-repeat;
-
-      transition: all 0.3s ease;
-
-      transform: translate(-50%, -50%);
-    }
-
-    @media (min-width: 1200px) {
-      margin-right: 26px;
-    }
-  }
 
   @media (min-width: 768px) {
     position: relative;
@@ -424,22 +324,111 @@
   }
 }
 
+.feedback__landmarks .feedback__group {
+  padding-top: 20px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 456px;
+    margin: 0 auto;
+    padding: 43px 0 0 0;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+.feedback__landmarks .feedback__title {
+  @media (min-width: 768px) {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+
+    background-color: $color-white;
+  }
+}
+
+.feedback__landmarks .feedback__label {
+  margin-bottom: 25px;
+
+  @media (min-width: 768px) {
+    width: 196px;
+    margin-bottom: 34px;
+
+    white-space: nowrap;
+  }
+
+  @media (min-width: 1200px) {
+    width: auto;
+  }
+}
+
+.feedback__landmarks .feedback__input {
+  display: none;
+
+  &:checked ~ .control::before {
+    display: block;
+  }
+}
+
+.feedback__landmarks .control {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  margin-right: 23px;
+  flex-shrink: 0;
+
+  border-radius: 5px;
+  background-color: $color-bg-input;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $color-input-bg-hover;
+  }
+
+  &:active {
+    background-color: $color-radio-button-active;
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+
+    display: none;
+    width: 23px;
+    height: 16px;
+
+    background-image: url("../img/icon/i-tick.svg");
+    background-repeat: no-repeat;
+
+    transition: all 0.3s ease;
+
+    transform: translate(-50%, -50%);
+  }
+
+  @media (min-width: 1200px) {
+    margin-right: 26px;
+  }
+}
+
 .feedback__emotions {
   margin: 0 -20px 0 -20px;
   padding: 20px;
 
   border-top: 1px solid $color-bg-input;
-
-  & .feedback__title {
-    @media (min-width: 768px) {
-      position: relative;
-      display: block;
-      margin: 0 auto;
-      width: 400px;
-
-      background-color: $color-white;
-    }
-  }
 
   @media (min-width: 768px) {
     position: relative;
@@ -464,6 +453,17 @@
         top: 46px;
       }
     }
+  }
+}
+
+.feedback__emotions .feedback__title {
+  @media (min-width: 768px) {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+
+    background-color: $color-white;
   }
 }
 
@@ -511,13 +511,13 @@
   line-height: 26px;
   color: $color-text;
   text-transform: uppercase;
+}
 
-  & span {
-    margin-right: 3px;
+.feedback__info span {
+  margin-right: 3px;
 
-    @media (min-width: 1200px) {
-      display: none;
-    }
+  @media (min-width: 1200px) {
+    display: none;
   }
 }
 
@@ -577,7 +577,7 @@
   &::before {
     position: absolute;
     content: "";
-    background: url("../img/icon/icon-phone.svg"), $color-bd-mail;
+    background: url("../img/icon/i-phone.svg"), $color-bd-mail;
     background-position: center, center;
     background-repeat: no-repeat;
     width: 58px;
@@ -603,7 +603,7 @@
   &::before {
     position: absolute;
     content: "";
-    background: url("../img/icon/icon-mail.svg"), $color-bd-mail;
+    background: url("../img/icon/i-mail.svg"), $color-bd-mail;
     background-position: center, center;
     background-repeat: no-repeat;
     width: 58px;

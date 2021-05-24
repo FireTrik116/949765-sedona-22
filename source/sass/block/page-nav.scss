@@ -1,0 +1,12 @@
+.page-nav--nojs {
+  position: relative;
+  z-index: 22;
+}
+
+.page-nav--nojs .user-nav__list {
+  display: block;
+
+  @media (min-width: 767px) {
+    display: flex;
+  }
+}

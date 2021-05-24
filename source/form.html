@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    <link rel="preload" href="fonts/ptsans.woff" as="font" type="font/woff" crossorigin="anonymous" />
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="fonts/ptsansbold.woff" as="font" type="font/woff" crossorigin="anonymous" />
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.min.css" />
 
     <title>Sedona</title>
@@ -32,7 +36,7 @@
               />
             </picture>
           </a>
-          <nav class="page-nav">
+          <nav class="page-nav page-nav--nojs">
             <section class="user-nav">
               <h2 class="visually-hidden">Навигация</h2>
               <button class="user-nav__burger" type="button">
@@ -67,14 +71,14 @@
             <picture>
               <source
                 media="(min-width:1200px)"
-                srcset="img/icon/icon-sedona-catalog-promo-desk.svg"
+                srcset="img/icon/i-sedona-catalog-promo-desk.svg"
               />
               <source
                 media="(min-width:768px)"
-                srcset="img/icon/icon-sedona-catalog-promo-tab.svg"
+                srcset="img/icon/i-sedona-catalog-promo-tab.svg"
               />
               <img
-                src="img/icon/icon-sedona-catalog-mobile.svg"
+                src="img/icon/i-sedona-catalog-mobile.svg"
                 alt="Sedona"
                 width="229"
                 height="39"
@@ -168,7 +172,7 @@
                     id="feedbackGood"
                     checked
                   />
-                  <span class="control"></span>Скорее положительное
+                  <span class="control" tabindex="0"></span>Скорее положительное
                 </label>
                 <label class="feedback__label" for="feedbackBad">
                   <input
@@ -178,7 +182,7 @@
                     value="bad"
                     id="feedbackBad"
                   />
-                  <span class="control"></span>Скорее отрицательное
+                  <span class="control" tabindex="0"></span>Скорее отрицательное
                 </label>
                 <label class="feedback__label" for="feedbackNeutral">
                   <input
@@ -188,7 +192,7 @@
                     value="dontknow"
                     id="feedbackNeutral"
                   />
-                  <span class="control"></span>Затрудняюсь ответить
+                  <span class="control" tabindex="0"></span>Затрудняюсь ответить
                 </label>
               </div>
             </fieldset>
@@ -204,7 +208,7 @@
                     id="feedbackBridge"
                     checked
                   />
-                  <span class="control"></span>Мост Дьявола
+                  <span class="control" tabindex="0"></span>Мост Дьявола
                 </label>
                 <label class="feedback__label" for="feedbackPark">
                   <input
@@ -215,7 +219,7 @@
                     id="feedbackPark"
                     checked
                   />
-                  <span class="control"></span>Гора-Колокол
+                  <span class="control" tabindex="0"></span>Гора-Колокол
                 </label>
                 <label class="feedback__label" for="feedbackMountain">
                   <input
@@ -226,7 +230,7 @@
                     id="feedbackMountain"
                     checked
                   />
-                  <span class="control"></span>Слайд-парк
+                  <span class="control" tabindex="0"></span>Слайд-парк
                 </label>
                 <label class="feedback__label" for="feedbackRock">
                   <input
@@ -236,7 +240,7 @@
                     value="rock"
                     id="feedbackRock"
                   />
-                  <span class="control"></span>Красные скалы
+                  <span class="control" tabindex="0"></span>Красные скалы
                 </label>
               </div>
             </fieldset>
@@ -264,30 +268,30 @@
         <div class="footer__center">
           <ul class="footer__list">
             <li class="footer__item">
-              <a href="#" class="footer__social"
+              <a href="#" class="footer__social" aria-label="Мы в твиттере"
                 ><img
                   class="footer__img footer__img--twitter"
-                  src="img/icon/icon-twitter.svg"
+                  src="img/icon/i-twitter.svg"
                   alt="Twitter"
                   width="18"
                   height="15"
               /></a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__social"
+              <a href="#" class="footer__social" aria-label="Мы в фейсбуке"
                 ><img
                   class="footer__img footer__img--facebook"
-                  src="img/icon/icon-facebook.svg"
+                  src="img/icon/i-facebook.svg"
                   alt="facebook"
                   width="9"
                   height="19"
               /></a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__social"
+              <a href="#" class="footer__social" aria-label="Мы в ютубе"
                 ><img
                   class="footer__img footer__img--youtube"
-                  src="img/icon/icon-youtube.svg"
+                  src="img/icon/i-youtube.svg"
                   alt="Youtube"
                   width="20"
                   height="14"
@@ -299,6 +303,7 @@
           <a
             href="https://htmlacademy.ru/intensive/adaptive"
             class="footer__link"
+            aria-label="Ссылка на академию"
           >
             <span class="footer__text">Разработано</span>
             <svg

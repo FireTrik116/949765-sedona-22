@@ -204,15 +204,6 @@
       }
     }
 
-    & svg {
-      transition: all 0.3s ease;
-      fill: $color-video-control;
-
-      @media (min-width: 768px) {
-        fill: $color-white;
-      }
-    }
-
     @media (min-width: 768px) {
       margin-top: 34px;
       margin-left: 17px;
@@ -221,6 +212,15 @@
     @media (min-width: 1200px) {
       margin-left: -2px;
     }
+  }
+}
+
+.video__repeat svg {
+  transition: all 0.3s ease;
+  fill: $color-video-control;
+
+  @media (min-width: 768px) {
+    fill: $color-white;
   }
 }
 
@@ -253,15 +253,6 @@
       }
     }
 
-    & svg {
-      transition: all 0.3s ease;
-      fill: $color-video-control;
-
-      @media (min-width: 768px) {
-        fill: $color-white;
-      }
-    }
-
     @media (min-width: 768px) {
       margin-top: 36px;
       margin-left: 26px;
@@ -270,6 +261,15 @@
 
   @media (min-width: 1200px) {
     margin-left: 70px;
+  }
+}
+
+.video__subtitles svg {
+  transition: all 0.3s ease;
+  fill: $color-video-control;
+
+  @media (min-width: 768px) {
+    fill: $color-white;
   }
 }
 
@@ -301,15 +301,6 @@
       }
     }
 
-    & svg {
-      transition: all 0.3s ease;
-      fill: $color-video-control;
-
-      @media (min-width: 768px) {
-        fill: $color-white;
-      }
-    }
-
     @media (min-width: 768px) {
       margin-top: 36px;
     }
@@ -317,5 +308,14 @@
     @media (min-width: 1200px) {
       margin-left: 10px;
     }
+  }
+}
+
+.video__fullscreen svg {
+  transition: all 0.3s ease;
+  fill: $color-video-control;
+
+  @media (min-width: 768px) {
+    fill: $color-white;
   }
 }

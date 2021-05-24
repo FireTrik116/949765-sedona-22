@@ -3,10 +3,6 @@
 
   background-color: $color-blue;
 
-  br {
-    display: none;
-  }
-
   @media (min-width: 768px) {
     order: 2;
 
@@ -15,22 +11,23 @@
   }
 
   @media (min-width: 1200px) {
-    br {
-      display: block;
-    }
     padding: 51px 30px 40px 26px;
   }
 }
 
-.reason__title--next {
-  & br {
-    display: none;
-  }
+.reason__next--left br {
+  display: none;
 
   @media (min-width: 768px) {
-    br {
-      display: block;
-    }
+    display: block;
+  }
+}
+
+.reason__title--next br {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
   }
 }
 

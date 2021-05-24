@@ -123,10 +123,9 @@
 }
 
 .user-nav__item--review {
-  margin-left: auto;
-
   @media (min-width: 768px) {
     width: 145px;
+    margin-left: auto;
   }
 
   @media (min-width: 1200px) {
